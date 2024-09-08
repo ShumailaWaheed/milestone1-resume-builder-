@@ -1,10 +1,11 @@
-/* Reset some default browser styling */
+/* Reset default browser styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -18,6 +19,7 @@ body {
     margin: auto;
 }
 
+/* Header Styles */
 header {
     background: #282c34;
     color: #fff;
@@ -38,8 +40,8 @@ header {
     position: relative;
     border-radius: 50%;
     overflow: hidden;
-    width: 150px;
-    height: 150px;
+    width: 200px; /* Increased size */
+    height: 200px; /* Increased size */
     border: 8px solid #61dafb;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1);
 }
@@ -57,19 +59,19 @@ header {
 }
 
 .profile-info h1 {
-    font-size: 1.8rem;
+    font-size: 2rem; /* Increased font size */
     margin-bottom: 10px;
 }
 
 .profile-info p {
-    font-size: 0.9rem;
+    font-size: 1rem; /* Adjusted font size */
     margin-bottom: 10px;
 }
 
 .contact-info a {
     color: #61dafb;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 0.9rem; /* Adjusted font size */
 }
 
 .contact-info a:hover {
@@ -171,8 +173,8 @@ button:hover {
     }
 
     .profile-pic-wrapper {
-        width: 120px;
-        height: 120px;
+        width: 150px; /* Adjusted size */
+        height: 150px; /* Adjusted size */
     }
 
     .profile-info h1 {
@@ -180,7 +182,7 @@ button:hover {
     }
 
     .profile-info p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     button {
