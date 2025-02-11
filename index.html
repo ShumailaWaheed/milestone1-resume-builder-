@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shumaila Waheed - Web Developer Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script>
+        function toggleSkills() {
+            const skillsList = document.getElementById("skills-list");
+            const toggleBtn = document.getElementById("toggle-btn");
+            if (skillsList.style.display === "none") {
+                skillsList.style.display = "block";
+                toggleBtn.textContent = "Hide Skills";
+            } else {
+                skillsList.style.display = "none";
+                toggleBtn.textContent = "Show Skills";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="resume">
+        <!-- Left Sidebar -->
+        <aside class="left">
+            <div class="profile">
+                <img src="public/images/profile.jpg" alt="Shumaila Waheed">
+                <h2>Shumaila Waheed</h2>
+                <p> Web Developer</p>
+            </div>
+            <div class="contact section">
+                <h3><i class="fas fa-address-book"></i> Contact</h3>
+                <p><i class="fas fa-envelope"></i> shumailawaheed253@gmail.com</p>
+                <p><i class="fas fa-phone"></i> 03151156286</p>
+                <p><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</p>
+            </div>
+            <div class="education section">
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                <p><strong>Intermediate</strong>  - In Commerce (2023)</p>
+                <p><strong>Cloud & AI Engineering</strong>- In Progress (2024)</p>
+            </div>
+            <div class="skills section">
+                <h3><i class="fas fa-lightbulb"></i> Skills</h3>
+                <ul id="skills-list" style="display: none;">
+                    <li><i class="fas fa-code"></i> Next.js</li>
+                    <li><i class="fas fa-code"></i> React.js</li>
+                    <li><i class="fas fa-code"></i> JavaScript</li>
+                    <li><i class="fas fa-code"></i> TypeScript</li>
+                    <li><i class="fas fa-database"></i> Sanity CMS</li>
+                    <li><i class="fas fa-database"></i> Firebase</li>
+                    <li><i class="fas fa-paint-brush"></i> Tailwind CSS</li>
+                    <li><i class="fas fa-server"></i> Node.js</li>
+                    <li><i class="fas fa-server"></i> Express.js</li>
+                </ul>
+                <button id="toggle-btn" onclick="toggleSkills()"><i class="fas fa-eye"></i> Show Skills</button>
+            </div>
+            <div class="languages section">
+                <h3><i class="fas fa-language"></i> Languages</h3>
+                <p><i class="fas fa-comment"></i> English - Professional</p>
+                <p><i class="fas fa-comment"></i> Urdu - Native</p>
+            </div>
+        </aside>
+
+        <main class="right">
+            <section class="summary section">
+                <h2><i class="fas fa-user"></i> About</h2>
+                <p>Experienced Full-Stack Web Developer with expertise in Next.js, React.js, and modern web technologies. Passionate about building high-performance, scalable web applications with a focus on UX/UI.</p>
+            </section>
+
+            <section class="experience section">
+                <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+                <div class="job">
+                    <h3><i class="fas fa-laptop-code"></i> Full-Stack Web Developer | Freelance</h3>
+                    <p>Successfully completed multiple projects involving front-end and backend web development. Developed dynamic, user-friendly websites and web applications using modern frameworks and technologies.</p>
+                </div>
+                <div class="job">
+                    <h3><i class="fas fa-store"></i> Comforty - eCommerce Platform | Founder & Developer</h3>
+                    <p>Built Comforty, a chair-focused eCommerce platform featuring office, gaming, dining, lounge, and outdoor chairs. Developed a responsive UI, dynamic product pages, API integration, and an optimized admin dashboard for seamless management and performance.</p>
+                </div>
+                <div class="job">
+                    <h3><i class="fas fa-code"></i> TypeScript Developer | Projects</h3>
+                    <p>Built multiple TypeScript applications, including a CLI Number Guessing Game, Calculator, Bank App, and Currency Converter. Focused on strong typing, async operations, and modular development.</p>
+                </div>
+                
+            </section>
+
+            <section class="projects section">
+                <h2><i class="fas fa-folder-open"></i> Projects</h2>
+            
+                <ul>
+                    <li><i class="fas fa-folder"></i> <strong>Comforty - eCommerce Platform</strong> - <a href="https://hackathon-3-zeta-silk.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i> </a></li>
+                    <li><i class="fas fa-folder"></i> <strong>Dynamic Blog Website</strong> - <a href="https://milestone-03-dynamic-blog.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a></li>
+                    <li><i class="fas fa-folder"></i> <strong>Persnol Portfolio Website</strong> - <a href="https://personal-portfolio-with-next-js-and-tailwind-css.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i> </a></li>
+                    <li><i class="fas fa-folder"></i> <strong>Electroni Ecommerce</strong> - <a href="https://milestone-03-electronic-ecommerce.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i> </a></li>
+                    <li><i class="fas fa-folder"></i> <strong>Saas Whitespace Website</strong> - <a href="https://figma-whitespace-website.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i> </a></li>
+                    <li><i class="fas fa-folder"></i> <strong>Console Bank Application</strong> - <a href="https://github.com/ShumailaWaheed/console-bank-app.git" target="_blank"><i class="fas fa-external-link-alt"></i> </a></li>
+                    <li><i class="fas fa-folder"></i> <strong>currency-convertor-app</strong> - <a href="https://github.com/ShumailaWaheed/currency-convertor-app.git" target="_blank"><i class="fas fa-external-link-alt"></i> </a></li>
+                </ul>             
+            </section>
+        </main>
+    </div>
+</body>
+</html>
